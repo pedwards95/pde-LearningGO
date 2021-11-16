@@ -1,0 +1,48 @@
+In Go, values can be many things. 
+    Just to name a few, values can be numbers (like 109), or text wrapped in quotes (like "Hello world"). 
+These values can be written into code as is, and are called literals.
+
+In addition to literal (aka unnamed) values, there are also named values. 
+Naming a value in Go means creating a word that will represent that value. 
+    One example of named values are constants, which cannot be updated while the program is running. 
+    Another example of named values are variables which we can update their value. 
+        We use the const keyword to create a constant.
+
+Go has three basic categories for numbers:
+    Integers, or ints, are whole/counting numbers. 
+        You would use an int to count the number of books on a shelf, the number of products in a warehouse, the number of people on a website, etc…
+    Floating-point numbers, or floats, can include fractional data. 
+        You would use a float to store distances, percentages, and other quantities that required division or precision.
+    Complex numbers, complex, are pairs of floating-point numbers where the second part of the pair is marked with the “imaginary” unit i. 
+        Complex numbers are particularly useful when reasoning in 2-dimensional space and have other utilizations that make them relevant for involved calculations.
+
+11 different integer types, 2 different floating-point types, and 2 different complex number types. 
+These types all recognize different sets of numbers as valid.
+
+Beyond being broken down into the three categories, types also indicate how many bits (binary digits) will be used to represent the data. 
+    Fewer bits means fewer different possible values for the data, enforced as a strict minimum and maximum value for integers and less precision for floats and complex numbers. 
+    Fewer bits also means less data to save, so it will use less of a computer’s memory to hold onto that data. 
+    So, while it may be tempting to use types that can take a larger range of values, it can slow down a computer’s performance or cause the computer to run out of memory.
+
+Integers are further broken down into two categories: signed and unsigned. 
+    Signed integers can be negative, but unsigned integers can only be positive. 
+    This means that the minimum value for an unsigned integer is always 0. 
+    Since it can ignore the possibility of a negative value, an unsigned integer’s maximum value is much higher than a signed integer with the same number of bits.
+
+Surround the text you want to store with double-quotation marks 
+    (i.e., ", the single-quote ' has a special other meaning and isn’t used to define strings):
+
+You can use the + operator on strings to join them, this is known as string concatenation. 
+    Note that + does not add in additional spaces or punctuation.
+    Commas add spaces
+
+Even before we assign anything to our variables they hold a value. 
+Go’s designers attempted to make these “sensible defaults” that we can anticipate based on the variable’s types. 
+    All numeric variables have a value of 0 before assignment. 
+    String variables have a default value of "", which is also known as the empty string because it contains no characters. 
+    Boolean variables have a default value of false
+
+There is a way to declare a variable without explicitly stating its type using the short declaration := operator. 
+    We might use the := operator if we know what value we want our variable to store when creating it. 
+
+Updating a variable by adding another number to itself and saving the new value is so common that Go has a shorthand for it, the += operator.
