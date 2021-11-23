@@ -21,4 +21,13 @@ func main() {
 	spinachPrice := 1.50
 	basketTotal += spinachPrice
 	fmt.Println(basketTotal)
+
+	var part1, part2 string
+	part1 = "To be..."
+	part2 = "Not to be..."
+	fmt.Println(part1, part2)
+
+	quote, fact := "Bears, Beets, Battlestar Galactica", true
+	fmt.Println(quote) // Prints: Bears, Beets, Battlestar Galactica
+	fmt.Println(fact)  // Prints: true
 }

@@ -1,0 +1,19 @@
+Go is a pass-by-value language. In other words, we’re passing functions the value of an argument. 
+In a technical sense, when we’re calling a function with an argument, the Go compiler is strictly using the value of the argument rather than the argument itself. 
+Because of this feature (pass-by-value), the changes that take place in our function, stay within that function.
+
+But, we do have the ability to change values from different scopes. To do so, we need to make use of:
+    addresses
+    pointers
+    dereferencing
+
+To find a variable’s address we use the & operator followed by the variable name
+When we see the 0x prefix, this means that the number is in formatted in hexadecimal
+
+Pointers are variables that specifically store addresses.
+We even set the data type of the addresses’ value for the pointer. 
+*int
+To break it down further, the * operator signifies that this variable will store an address and the int portion means that the address contains an integer value.
+
+But what if we want the address to store a different value? 
+Well, we can actually use our pointer to access the address and change its value! This action is called dereferencing or indirecting.

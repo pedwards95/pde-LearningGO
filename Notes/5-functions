@@ -1,0 +1,7 @@
+see code.
+
+We can delay a function call to the end of the current scope by using the defer keyword. 
+defer tells Go to run a function, but at the end of the current function. This is useful for logging, file writing, and other utilities.
+
+Normally, we would consider adding fmt.Println("Taxes Calculated!") at the end of calculateTaxes(). 
+But, we have multiple return statements in our code, instead of adding a print statement right before each return, we use defer and it prints regardless of when our function ends. 

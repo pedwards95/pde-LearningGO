@@ -1,0 +1,19 @@
+alarmRinging := true
+if alarmRinging {
+  fmt.Println("Turn off the alarm!!") 
+}
+
+if (alarmRinging) {
+  fmt.Println("Turn off the alarm!!") 
+}
+
+random numbers aren’t entirely random. 
+The reason for this behavior is due to how Go seeds or chooses a number as a starting point for generating random numbers. 
+By default, the seed value is 1. We can provide a new seed value using the method rand.Seed() and passing in an integer.
+
+However, we encounter the same problem if we pass in a constant, i.e. pass in 5. 
+Each time we run our program, we’ll always print the same set of numbers. Therefore, each time we run our program, we also need a unique number as a seed. 
+One way to get this unique number each time we run our program is to use time. 
+The reason why we can use time to be our unique number is because it’s always a different time when our program is run! 
+
+Go uses a default seed value of 1 which can lead to predictable numbers being generated. We can generate random numbers by using different seed values.
